@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
 import FavoritesPage from './pages/FavoritesPage';
 import AccountPage from './pages/AccountPage';
+import AboutPage from './pages/AboutPage';
 import { AuthProvider } from './context/AuthContext';
 import AuthModal from './components/AuthModal';
 
@@ -42,6 +43,7 @@ function App() {
               <Route path="/category/:categoryName/:subCategory" element={<CategoryPage />} />
               <Route path="/favorites" element={<FavoritesPage />} />
               <Route path="/account" element={<AccountPage />} />
+              <Route path="/hakkimizda" element={<AboutPage />} />
             </Routes>
           </main>
 
