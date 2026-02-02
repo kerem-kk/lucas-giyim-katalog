@@ -8,7 +8,7 @@ export default function FloatingWidget() {
                 <div className="absolute top-1/2 -right-1 w-2 h-2 bg-white transform rotate-45 -translate-y-1/2 border-t border-r border-gray-100"></div>
             </div>
             <a
-                href="https://wa.me/"
+                href="https://wa.me/905522453002"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-xl transition-all hover:scale-110 flex items-center justify-center"

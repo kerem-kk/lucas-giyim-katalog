@@ -83,6 +83,7 @@ export default function Header({ isScrolled }) {
                         </div>
                     )}
 
+
                     <div className="hidden md:flex flex-col items-center group cursor-pointer">
                         {/* Link to Favorites Page if logged in, else open modal */}
                         {currentUser ? (
@@ -100,6 +101,13 @@ export default function Header({ isScrolled }) {
                             </div>
                         )}
                     </div>
+
+                    <Link to="/hakkimizda" className="hidden md:flex items-center">
+                        <span className="text-sm font-medium text-gray-700 hover:text-gold-accent transition-colors tracking-wide">
+                            HAKKIMIZDA
+                        </span>
+                    </Link>
+
                 </div>
             </div>
 
