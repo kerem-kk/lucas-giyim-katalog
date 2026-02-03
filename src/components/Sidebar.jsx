@@ -19,7 +19,7 @@ export default function Sidebar({ selectedCategory }) {
         'Takım Elbise',
         'Mont',
         'Ceket',
-        'Kaban',
+        'Aksesuar',
         'Pantolon',
         'Katalog'
     ];

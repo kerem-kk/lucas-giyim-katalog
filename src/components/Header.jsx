@@ -1,4 +1,4 @@
-import { Search, Bell, User, Star, Menu, X } from 'lucide-react';
+import { Search, User, Star, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
@@ -58,11 +58,6 @@ export default function Header({ isScrolled }) {
 
                 {/* Icons */}
                 <div className="flex items-center gap-4 md:gap-6 order-3 md:order-3 ml-auto md:ml-0">
-                    <div className="hidden md:flex flex-col items-center group cursor-pointer">
-                        <div className="relative">
-                            <Bell className="w-5 h-5 text-gray-700 group-hover:text-gold-accent transition-colors" strokeWidth={1.5} />
-                        </div>
-                    </div>
 
                     {currentUser ? (
                         <Link to="/account" className="hidden md:flex flex-col items-center group cursor-pointer">
@@ -119,7 +114,7 @@ export default function Header({ isScrolled }) {
             {/* Navigation */}
             <nav className={`md:block border-t border-gray-100 transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 md:max-h-full md:opacity-100 overflow-hidden'}`}>
                 <ul className="container mx-auto flex flex-col md:flex-row justify-center items-center gap-0 md:gap-8 text-sm font-medium text-gray-800">
-                    {['DAMATLIK', 'TAKIM ELBİSE', 'MONT', 'CEKET', 'KABAN', 'PANTOLON', 'KATALOG'].map((item) => (
+                    {['DAMATLIK', 'TAKIM ELBİSE', 'MONT', 'CEKET', 'AKSESUAR', 'PANTOLON', 'KATALOG'].map((item) => (
                         <li key={item} className="w-full md:w-auto text-center border-b border-gray-50 md:border-none">
                             <Link
                                 to={`/category/${slugify(item)}`}

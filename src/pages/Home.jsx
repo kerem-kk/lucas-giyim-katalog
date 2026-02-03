@@ -13,7 +13,7 @@ export default function Home() {
 
     const row2Categories = [
         { label: "CEKET", image: "https://images.unsplash.com/photo-1551488852-d809c952946c?q=80&w=2070&auto=format&fit=crop" },
-        { label: "KABAN", image: "https://images.unsplash.com/photo-1512413316925-fd5432420433?q=80&w=2070&auto=format&fit=crop" },
+        { label: "AKSESUAR", image: "https://images.unsplash.com/photo-1512413316925-fd5432420433?q=80&w=2070&auto=format&fit=crop" },
         { label: "PANTOLON", image: "https://images.unsplash.com/photo-1542272617-08f08630329e?q=80&w=2787&auto=format&fit=crop" }
     ];
 
