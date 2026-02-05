@@ -8,6 +8,7 @@ import CategoryPage from './pages/CategoryPage';
 import FavoritesPage from './pages/FavoritesPage';
 import AccountPage from './pages/AccountPage';
 import AboutPage from './pages/AboutPage';
+import AksesuarPage from './pages/AksesuarPage';
 import { AuthProvider } from './context/AuthContext';
 import AuthModal from './components/AuthModal';
 
@@ -44,6 +45,7 @@ function App() {
               <Route path="/favorites" element={<FavoritesPage />} />
               <Route path="/account" element={<AccountPage />} />
               <Route path="/hakkimizda" element={<AboutPage />} />
+              <Route path="/aksesuar" element={<AksesuarPage />} />
             </Routes>
           </main>
 

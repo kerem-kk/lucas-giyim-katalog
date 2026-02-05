@@ -10,7 +10,7 @@ export default function CategoryPage() {
 
     // Category List to match against (Single Source of Truth)
     const categories = [
-        'Damatlık', 'Takım Elbise', 'Mont', 'Ceket', 'Kaban', 'Pantolon', 'Katalog'
+        'Damatlık', 'Takım Elbise', 'Mont', 'Ceket', 'Aksesuar', 'Pantolon', 'Katalog'
     ];
 
     // Find the matching category by comparing slugs
