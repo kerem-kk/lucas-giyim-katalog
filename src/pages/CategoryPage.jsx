@@ -39,9 +39,20 @@ export default function CategoryPage() {
         { id: 302, title: "Gri Flanel Pantolon", price: "4.200,00 TL", category: "Pantolon", image: "https://images.unsplash.com/photo-1479064555552-3ef4979f8908?q=80&w=2070&auto=format&fit=crop" },
         { id: 303, title: "Lacivert Chino", price: "3.200,00 TL", category: "Pantolon", image: "https://images.unsplash.com/photo-1598808503846-570ecf513a1d?q=80&w=2069&auto=format&fit=crop" },
 
-        // Smokin/Damatlık
-        { id: 401, title: "Bordo Smokin Ceket", price: "18.000,00 TL", category: "Damatlık", image: "https://images.unsplash.com/photo-1593032465175-d81f0f93fb09?q=80&w=2070&auto=format&fit=crop" },
-        { id: 402, title: "Siyah Klasik Damatlık", price: "24.000,00 TL", category: "Damatlık", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop" },
+        // Damatlık
+        { id: "310-396", title: "Model 310-396", category: "Damatlık", slug: "310-396", image: "/damatlik/310-396/row-1-column-1.png" },
+        { id: "357-204", title: "Model 357-204", category: "Damatlık", slug: "357-204", image: "/damatlik/357-204/row-1-column-1.png" },
+        { id: "357-205", title: "Model 357-205", category: "Damatlık", slug: "357-205", image: "/damatlik/357-205/row-1-column-1.png" },
+        { id: "357-216", title: "Model 357-216", category: "Damatlık", slug: "357-216", image: "/damatlik/357-216/row-1-column-1.png" },
+        { id: "357-217", title: "Model 357-217", category: "Damatlık", slug: "357-217", image: "/damatlik/357-217/row-1-column-1.png" },
+        { id: "357-230", title: "Model 357-230", category: "Damatlık", slug: "357-230", image: "/damatlik/357-230/row-1-column-1.png" },
+        { id: "357-231", title: "Model 357-231", category: "Damatlık", slug: "357-231", image: "/damatlik/357-231/row-1-column-1.png" },
+        { id: "357-794", title: "Model 357-794", category: "Damatlık", slug: "357-794", image: "/damatlik/357-794/row-1-column-1.png" },
+        { id: "357-818", title: "Model 357-818", category: "Damatlık", slug: "357-818", image: "/damatlik/357-818/row-1-column-1.png" },
+        { id: "357-824", title: "Model 357-824", category: "Damatlık", slug: "357-824", image: "/damatlik/357-824/row-1-column-1.png" },
+        { id: "357-981", title: "Model 357-981", category: "Damatlık", slug: "357-981", image: "/damatlik/357-981/row-1-column-1.png" },
+        { id: "388-432", title: "Model 388-432", category: "Damatlık", slug: "388-432", image: "/damatlik/388-432/row-1-column-1.png" },
+        { id: "388-586", title: "Model 388-586", category: "Damatlık", slug: "388-586", image: "/damatlik/388-586/row-1-column-1.png" },
 
         // Mont
         { id: 501, title: "Siyah Şişme Mont", price: "5.500,00 TL", category: "Mont", image: "https://images.unsplash.com/photo-1544022613-e87ca75a784a?q=80&w=2787&auto=format&fit=crop" },

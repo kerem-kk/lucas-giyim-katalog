@@ -1,17 +1,22 @@
 import { Eye, Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { slugify } from '../utils/slugify';
 
-export default function ProductCard({ id, image, title, price, category }) {
+export default function ProductCard({ id, image, title, price, category, slug }) {
     const { toggleFavorite, isFavorite } = useAuth();
     const isFav = isFavorite(id);
 
     const handleFavoriteClick = (e) => {
+        e.preventDefault();
         e.stopPropagation();
         toggleFavorite({ id, image, title, price, category });
     };
 
+    const productUrl = `/category/${slugify(category)}/${slug || slugify(title)}/detay`;
+
     return (
-        <div className="group cursor-pointer relative">
+        <Link to={productUrl} className="group cursor-pointer relative block">
 
             {/* Favorite Button */}
             <button
@@ -32,15 +37,15 @@ export default function ProductCard({ id, image, title, price, category }) {
 
                 {/* Quick Action Overlay */}
                 <div className="absolute bottom-0 left-0 right-0 bg-white/95 py-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex justify-center gap-4 border-t border-gray-100">
-                    <button className="flex items-center gap-1 text-[10px] uppercase font-bold tracking-wider hover:text-gold-accent transition-colors">
+                    <span className="flex items-center gap-1 text-[10px] uppercase font-bold tracking-wider hover:text-gold-accent transition-colors">
                         <Eye className="w-4 h-4" /> İncele
-                    </button>
+                    </span>
                 </div>
             </div>
 
             <div className="text-center">
                 <h3 className="font-sans text-sm font-medium text-gray-800 mb-1 group-hover:text-gold-accent transition-colors">{title}</h3>
             </div>
-        </div>
+        </Link>
     );
 }

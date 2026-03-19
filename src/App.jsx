@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import FloatingWidget from './components/FloatingWidget';
 import Home from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
+import ProductDetailPage from './pages/ProductDetailPage';
 import FavoritesPage from './pages/FavoritesPage';
 import AccountPage from './pages/AccountPage';
 import AboutPage from './pages/AboutPage';
@@ -42,6 +43,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/category/:categoryName" element={<CategoryPage />} />
               <Route path="/category/:categoryName/:subCategory" element={<CategoryPage />} />
+              <Route path="/category/:categoryName/:productSlug/detay" element={<ProductDetailPage />} />
               <Route path="/favorites" element={<FavoritesPage />} />
               <Route path="/account" element={<AccountPage />} />
               <Route path="/hakkimizda" element={<AboutPage />} />
